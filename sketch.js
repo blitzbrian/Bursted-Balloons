@@ -41,9 +41,8 @@ function draw() {
         if(begin > 50) difficulty = 2;
         if(begin >= highscore) {
             highscore = points;
-            storeItem('highscore', highscore);
         };
-        storeItem('highscore', highscore);
+        storeItem('highscore', points);
         player.show();
         player.update();
         drone.update();
